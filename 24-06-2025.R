@@ -22,7 +22,9 @@ kurtosis(time)
 
 
 
-
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(data.frame(time), aes(x=time)) + geom_density(color="#ff5fff", alpha=.2)
 
 
 
